@@ -1,1 +1,2 @@
 # Ricky React
+Journey begins
