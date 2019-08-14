@@ -1,5 +1,7 @@
 import { statement } from "@babel/template";
 
+import { tsPropertySignature } from "@babel/types";
+
 import React from 'react';
 
 class SearchBar extends React.Component {
@@ -8,7 +10,7 @@ class SearchBar extends React.Component {
     onFormSubmit = event => {
         event.preventDefault();
 
-        console.log(this.state.term)
+        this.props.onSubmit(this.state.term)
     }
 
     render () {
