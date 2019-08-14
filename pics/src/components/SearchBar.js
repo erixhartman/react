@@ -1,7 +1,3 @@
-import { statement } from "@babel/template";
-
-import { tsPropertySignature } from "@babel/types";
-
 import React from 'react';
 
 class SearchBar extends React.Component {
@@ -13,7 +9,7 @@ class SearchBar extends React.Component {
         this.props.onSubmit(this.state.term)
     }
 
-    render () {
+    render() {
         return( 
             <div className="ui segment">
                 <form onSubmit={this.onFormSubmit} className="ui form">
