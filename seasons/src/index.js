@@ -2,14 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class App extends React.Component {
-    // Not required but also special
-    // First function called when this class is used.
-    // Good for initializing state
-    constructor(props) {
-        super(props);
-        // ONLY time we do direct assignment to this.state
-        this.state = { lat: null, errorMessage: '' };
-    }
+    
+    state = { lat: null, errorMessage: '' }
     
     // React says we HAVE TO define render!
     render() {
